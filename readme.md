@@ -20,8 +20,8 @@ gulp or gulp serve
 - **HTML**: Static templating with [Nunjucks](https://mozilla.github.io/nunjucks/) and [gulp-data](https://github.com/colynb/gulp-data)
 - **Images:**
   - **SVG Sprites**: Compiles a spritesheet from a folder of SVGs
-  - Compression with image-min
-- **Icon Fonts:**
+  - Compression with svg-min
+- **Icon Fonts**
 - **Development Mode:**
   - Source Maps
 - **Production Builds:**
@@ -32,12 +32,15 @@ Make sure Node 0.12.x is installed. I recommend using [NVM](https://github.com/c
 
 #### Install Dependencies
 ```
-npm install
+npm install && bower install
 ```
 
 #### Start compiling, serving, and watching files
 ```
-gulp or gulp serve
+gulp/tasks/server
+
+run: gulp or gulp serve
+
 ```
 
 All files will compile in development mode (uncompressed with source maps). [BrowserSync](http://www.browsersync.io/) will serve up files to `localhost:3001`
@@ -48,7 +51,9 @@ Directory and top level settings are convienently exposed in `gulp/gulpfile.js`.
 # Task Details
 
 #### JS
-
+```
+gulp/tasks/scripts
+```
 Modular JS modules
 
 #### CSS
@@ -61,9 +66,7 @@ Your Stylus gets run through Autoprefixer, so don't prefix!
 ```
 gulp/tasks/html
 ```
-Robust templating with [Nunjucks](https://mozilla.github.io/nunjucks/). Nunjucks is nearly identical in syntax to Twig (PHP), and replaces Swig (and Twig-like js templating language), which is no longer maintained.
-
-A sample data file is set up at [data/items.json](data/items.json), is read in by the `html` task, and exposes the properties to your html templates.
+Robust templating with [Nunjucks](https://mozilla.github.io/nunjucks/). A sample data file is set up at [data/items.json](data/items.json), is read in by the `html` task, and exposes the sample properties to the html templates.
 
 #### Fonts
 ```
