@@ -1,0 +1,28 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+sans-font = 'Lato', sans-serif
+
+/* User Rupture for responsive interactions */
+rupture.scale = 0 400px 700px 1050px 1530px 1800px
+rupture.scale-names = 'xs' 's' 'm' 'l' 'xl' 'hd'
+
+rupture.font-sizes = range(12, 50)
+rupture.margins = range(5, 100, 5)
+
+hide = 'xs' 400px, 's' 700px, 'm' 1050px, 'l' 1530px, 'xl' 1800px
+
+/*
+* Hiding based on screen size
+*/
+for size in rupture.scale-names
+  .hide-below-{size} {
+    +below(size) {
+      display: none
+    }
+  }
+  .hide-above-{size} {
+    +above(size) {
+      display: none
+    }
+  }

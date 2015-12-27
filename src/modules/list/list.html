@@ -1,0 +1,9 @@
+{% import "modules/header/header.html" as Header %}
+<section class="fruits">
+  {{ Header.title(name="Fruit Items") }}
+  <ul class="list-group">
+    {% for item in items %}
+      <li class="list-group-item">{{ item.name }}</li>
+    {% endfor %}
+  </ul>
+</section>

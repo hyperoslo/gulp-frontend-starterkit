@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Name</title>
+
+  <link rel="stylesheet"  media="screen" href="/vendor.min.css" charset="utf-8" />
+  <link rel="stylesheet" href="/index.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+
+  <div class="container">
+    <!-- This is where nunjucks inserts files -->
+    {% block content %}{% endblock %}
+
+  </div>
+
+  <script src="/vendor.min.js" charset="utf-8"></script>
+  <script src="/index.js" charset="utf-8"></script>
+</body>
+</html>
