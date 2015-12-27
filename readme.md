@@ -1,6 +1,6 @@
-# Gulp Frontend StarterKit
+# Gulp Frontend StarterKit (Static Websites)
 
-Gulp Frontend StarterKit is a mix of tasks and tools integrated with [Gulp](http://gulpjs.com/) to form a fully featured asset pipeline. It provides an efficient and modular workflow to develop static websites quickly.
+Gulp Frontend StarterKit is a minimal mix of tasks and tools integrated with [Gulp](http://gulpjs.com/) to form a asset pipeline. It provides an efficient and modular workflow to develop and deploy static websites quickly.
 
 
 ```bash
