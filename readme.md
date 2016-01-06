@@ -8,7 +8,7 @@ clone the repo
 cd AppName
 npm install
 bower install # For bower packages
-gulp or gulp serve
+gulp or alternatively: gulp serve
 ```
 
 ## Features
@@ -39,7 +39,7 @@ npm install && bower install
 ```
 gulp/tasks/server
 
-run: gulp or gulp serve
+gulp or alternatively: gulp serve
 
 ```
 
