@@ -28,7 +28,6 @@ gulp or gulp serve
   - JS and CSS are uglified and minified
 
 # Basic Usage
-Make sure Node 0.12.x is installed. I recommend using [NVM](https://github.com/creationix/nvm) to manage versions.
 
 #### Install Dependencies
 ```
