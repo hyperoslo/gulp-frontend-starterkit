@@ -25,7 +25,7 @@ gulp.task('bower', function() {
   .pipe(cssFilter)
   .pipe($.sourcemaps.init())
   .pipe($.concat('vendor.min.css'))
-  .pipe($.minifyCss({compatibility: 'ie8'}))
+  .pipe($.cssnano({compatibility: 'ie8'}))
   .pipe($.sourcemaps.write(config.dist.maps))
   .pipe(gulp.dest(config.dist.path))
   .pipe(cssFilter.restore)
