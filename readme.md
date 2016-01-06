@@ -4,7 +4,7 @@ Gulp Frontend StarterKit is a minimal mix of tasks and tools integrated with [Gu
 
 
 ```bash
-git clone https://github.com/gauravtiwari/gulp-frontend-starterkit AppName
+clone the repo
 cd AppName
 npm install
 bower install # For bower packages
