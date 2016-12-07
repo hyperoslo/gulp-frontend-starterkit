@@ -75,3 +75,11 @@ gulp/tasks/fonts
 All this task does is copy fonts from `./src/fonts` to `./dist/fonts`.
 
 ***
+
+#### Deployment
+
+```bash
+npm install firebase-tools
+# Add project-name to firebase.json
+firebase deploy
+```

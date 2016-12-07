@@ -1,0 +1,9 @@
+{
+  "firebase": "project-name",
+  "public": "dist",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
